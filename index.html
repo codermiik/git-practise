@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaf Disease Detection System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="home-screen">
+      <h1>Welcome to the Leaf Disease Detection System</h1>
+      <img src="tomato-plant.jpg" alt="Tomato Plant">
+      <button id="start-detection-btn">Start Detection</button>
+    </div>
+
+    <div class="image-capture-screen" style="display: none;">
+      <h2>Step 1: Image Capture</h2>
+      <p>Please take a clear photo of a tomato plant leaf for analysis.</p>
+      <button id="take-photo-btn">Take Photo</button>
+      <button id="upload-photo-btn">Upload Photo</button>
+    </div>
+
+    <div class="analysis-screen" style="display: none;">
+      <h2>Step 2: Analysis</h2>
+      <img id="leaf-image" src="" alt="Leaf">
+      <div id="loading-icon" style="display: none;">Loading...</div>
+      <div id="results" style="display: none;"></div>
+      <button id="try-again-btn" style="display: none;">Try Again</button>
+      <button id="save-results-btn" style="display: none;">Save Results</button>
+    </div>
+
+    <div class="saved-results-screen" style="display: none;">
+      <h2>Saved Results</h2>
+      <ul id="saved-results-list"></ul>
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+</html>
